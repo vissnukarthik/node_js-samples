@@ -8,7 +8,7 @@ fs.readFile('calc.js','utf8',function(err,data){
  // console.log(data);
 });
 
-fs.writeFile('writeFile.js','console.log("this is insidertfile")',function if(err) {
+fs.writeFile('writeFile.js','console.log("this is inside the file")',function if(err) {
   console.log("data is written");
 })
 
