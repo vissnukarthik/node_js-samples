@@ -1,8 +1,8 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
 
-const accountSid = 'ACb65bb6fc10cbe4862c644ed17c2f3a9f';
-const authToken = 'f6518da962c1b2e947409dfbd97943a6';
+const accountSid = '';
+const authToken = '';
 
 const client= require('twilio')(accountSid,authToken);
 
@@ -22,7 +22,7 @@ async function scrape(){
     .find('span .a-offscreen').first().text().replace(/[,₹.]/g,"");
     const priceNum = parseInt(price)
     product.price= priceNum/100;
-    console.log(product.price);
+    console.log(product.link);
 
 
     if(priceNum > 25000){
