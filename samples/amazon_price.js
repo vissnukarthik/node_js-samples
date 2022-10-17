@@ -30,7 +30,7 @@ async function scrape(){
         client.messages
       .create({body: `the price of the ${product.name} is lower than ₹${price} get it in ${product.link}  `,
       from: '+18329792610',
-        to: '+919042045342'})
+        to: '+91962605588'})
       .then(message => console.log(message));
     }
 }
